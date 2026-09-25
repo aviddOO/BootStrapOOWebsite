@@ -1,0 +1,13 @@
+.container {
+  padding: 80px 120px;
+}
+
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+}
+
+.glyphicon glyphicon-chevron-left{
+  size: 10px;
+}
