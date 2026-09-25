@@ -1,13 +1,47 @@
-.container {
-  padding: 80px 120px;
+
+#myCarousel {
+  width: 100%;
+  margin: 0;
 }
 
-
-.carousel-inner img {
-  width: 100%; /* Set width to 100% */
-  margin: auto;
+#myCarousel .carousel-inner,
+#myCarousel .item {
+  width: 100%;
 }
 
-.glyphicon glyphicon-chevron-left{
-  size: 10px;
+#myCarousel .item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.navbar {
+  background-color: #a51f2f;
+  height: 90px;
+}
+
+.navimg {
+  height: 65px;
+  width: auto;
+}
+
+.navbar-text {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav > li > a {
+  color: rgba(255, 255, 255, 0.774) !important;
+  font-size: 15px;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar-text a,
+.navbar-text a:hover,
+.navbar-text a:focus {
+  color: white !important;
 }
