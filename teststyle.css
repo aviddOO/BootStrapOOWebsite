@@ -1,9 +1,3 @@
-
-#myCarousel {
-  width: 100%;
-  margin: 0;
-}
-
 #myCarousel .carousel-inner,
 #myCarousel .item {
   width: 100%;
@@ -11,7 +5,7 @@
 
 #myCarousel .item img {
   width: 100%;
-  height: 600px;
+  height: 885px;
   object-fit: cover;
   display: block;
 }
@@ -44,4 +38,45 @@
 .navbar-text a:hover,
 .navbar-text a:focus {
   color: white !important;
+}
+
+.MovingTitle {
+  color: #a51f2f;
+  font-size: 30px;
+  font-weight: 550;
+}
+
+.WelcomeTitle {
+  color: #a51f2f;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.intro {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align:justify !important;
+  font-size: 16px;
+}
+
+.intro1 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  text-align:justify !important;
+  font-size: 16px;
+}
+
+
+.intro2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align:justify !important;
+  font-size: 16px;
+}
+
+.rBox {
+  background-color:#a51f2f;
+  height: 200px;
+  border-style: solid;
+  border: 10px;
 }
