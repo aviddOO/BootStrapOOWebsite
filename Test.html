@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Oundle and Dristrict Choral Society</title>
+  <title>Oundle and District Choral Society</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -9,10 +9,33 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="teststyle.css">
 </head>
-<body>
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="90">
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Carousel navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#top">
+        <img class="navimg" src="NavBarImage.png" alt="Oundle and District Choral Society">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#concerts">Concerts &amp; Events</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -24,180 +47,228 @@
     <li data-target="#myCarousel" data-slide-to="7"></li>
   </ol>
 
-  <!-- Images for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="Carousel1.png" alt="">
+    <div class="item active"><img src="Carousel1.png" alt="Choir performing in concert"></div>
+    <div class="item"><img src="Carousel2.png" alt="Choral society concert"></div>
+    <div class="item"><img src="Carousel3.png" alt="Choir members singing"></div>
+    <div class="item"><img src="Carousel4.png" alt="Concert venue"></div>
+    <div class="item"><img src="Carousel5.png" alt="Choir performance"></div>
+    <div class="item"><img src="Carousel6.png" alt="Oundle concert"></div>
+    <div class="item"><img src="Carousel7.png" alt="Choir and orchestra"></div>
+    <div class="item"><img src="Carousel8.png" alt="Oundle and District Choral Society"></div>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="section section-white intro-section">
+    <div class="container text-center">
+      <marquee>
+        <h2 class="moving-title">We are now on our summer break. The new term will start on Monday 7th September</h2>
+      </marquee>
+      <h1>Welcome to the Oundle &amp; District Choral Society</h1>
+      <p>We are a mixed voice choir who have been in existence for over 100 years. We draw our membership from a fairly wide rural area and currently have approximately seventy voices who meet for rehearsals <strong>every Monday during term time.</strong></p>
+      <p>Although we are an independent choral society, we have close links with Oundle School with whom we often perform and who regularly support our concerts. <strong>Our rehearsals are held in Laxton Junior School Hall, East Road, Oundle, PE8 4BX, from 7.30pm until 9.30pm.</strong></p>
+      <p>There is no requirement to audition and all singers are made welcome no matter what skill level you have. We are grateful to Oundle Town Council for their continuing financial support but, much like most societies, we are a registered charity and are obliged to charge a subscription fee. However, don't let that stop you from coming along to see if you like us!</p>
+      <p>If you are interested in joining our society please contact us for more information by telephoning/emailing using the details below.</p>
+      <p>Registered charity number: 1098947</p>
     </div>
-    <div class="item">
-      <img src="Carousel2.png" alt="">
+  </section>
+
+  <section id="concerts" class="section section-red concert-section text-center">
+    <div class="container">
+      <h1>Forthcoming Concert</h1>
+      <h2>We will be rehearsing for a French choral Christmas concert which will include</h2>
+      <h2>Messe de minuit pour Noel by Marc-Antoine Charpentier and</h2>
+      <h2>Oratorio de Noel by Saint-Saens.</h2>
     </div>
-    <div class="item">
-      <img src="Carousel3.png" alt="">
+  </section>
+
+  <section class="section section-white media-section text-center">
+    <div class="container-fluid">
+      <h1>Recent Photos and Videos</h1>
+      <div class="row">
+        <div class="col-sm-3 media-item">
+          <iframe src="https://www.youtube.com/embed/pvctYlR6xqw" title="Recent ODCS video 1" allowfullscreen></iframe>
+          <img src="Rphoto1.png" alt="Recent choral society photo">
+        </div>
+        <div class="col-sm-3 media-item">
+          <iframe src="https://www.youtube.com/embed/pvctYlR6xqw" title="Recent ODCS video 2" allowfullscreen></iframe>
+          <img src="Rphoto2.png" alt="Recent choral society photo">
+        </div>
+        <div class="col-sm-3 media-item">
+          <iframe src="https://www.youtube.com/embed/pvctYlR6xqw" title="Recent ODCS video 3" allowfullscreen></iframe>
+          <img src="Rphoto3.png" alt="Recent choral society photo">
+        </div>
+        <div class="col-sm-3 media-item">
+          <iframe src="https://www.youtube.com/embed/pvctYlR6xqw" title="Recent ODCS video 4" allowfullscreen></iframe>
+          <img src="Rphoto4.png" alt="Recent choral society photo">
+        </div>
+      </div>
     </div>
-    <div class="item">
-      <img src="Carousel4.png" alt="">
+  </section>
+
+  <section class="section section-red gallery-section text-center">
+    <div class="container-fluid">
+      <h1>Previous Concerts and Events</h1>
+      <div class="row">
+        <div class="col-sm-3"><img src="Photo1.png" alt="Previous concert poster"></div>
+        <div class="col-sm-3"><img src="Photo2.png" alt="Previous concert poster"></div>
+        <div class="col-sm-3"><img src="Photo3.png" alt="Previous concert poster"></div>
+        <div class="col-sm-3"><img src="Photo4.png" alt="Previous concert poster"></div>
+      </div>
     </div>
-    <div class="item">
-      <img src="Carousel5.png" alt="">
+  </section>
+
+  <section class="section section-white people-section text-center">
+    <div class="container">
+      <div class="profile-card">
+        <h4>Accompanist</h4>
+        <h3>Elizabeth Arkell</h3>
+        <img src="Rphoto1.png" alt="Elizabeth Arkell">
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#elizabethBio">Bio</button>
+      </div>
     </div>
-    <div class="item">
-      <img src="Carousel6.png" alt="">
+  </section>
+
+  <section id="members" class="section section-red members-section text-center">
+    <div class="container">
+      <h1>Members</h1>
+      <div class="committee">
+        <p>Chair : Tessa Leuchars</p>
+        <p>Treasurer: Lynne Pritchard</p>
+        <p>Secretary: Clare Jones and Janet Ollerenshaw</p>
+        <p>Publicity and Website: Tessa Leuchars and Claire Weston</p>
+      </div>
+      <div class="profile-card inverse">
+        <h4>Musical Director &amp; Conductor</h4>
+        <h3>Andrew Kennedy</h3>
+        <img src="Rphoto2.png" alt="Andrew Kennedy">
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#andrewBio">Bio</button>
+      </div>
     </div>
-    <div class="item">
-      <img src="Carousel7.png" alt="">
+  </section>
+
+  <section class="section section-white quotes-section">
+    <div class="container">
+      <h2 class="text-center">Why we enjoy singing with ODCS</h2>
+      <div class="quote-grid">
+        <blockquote>
+          <p>It is such a privilege for us to have Andrew Kennedy as our Musical Director, Conductor and Vocal Coach.</p>
+          <footer>Jeremy</footer>
+        </blockquote>
+        <blockquote>
+          <p>ODCS is the most friendly, relaxed and enjoyable choral society I have ever belonged to.</p>
+          <footer>Trisha</footer>
+        </blockquote>
+        <blockquote>
+          <p>I love the challenge of learning a new piece from scratch. Over the weeks, we gain confidence and learn to blend our voices.</p>
+          <footer>Clare</footer>
+        </blockquote>
+        <blockquote>
+          <p>Singing is the perfect form of exercise and relaxation, focussing your mind, whatever the day has thrown at you!</p>
+          <footer>Tessa</footer>
+        </blockquote>
+      </div>
     </div>
-    <div class="item">
-      <img src="Carousel8.png" alt="">
+  </section>
+
+  <section id="music" class="section section-red music-section">
+    <div class="container">
+      <h1 class="text-center">Music</h1>
+      <div class="music-list">
+        <p>Spring 2026 - Four Coronation anthems, Handel, and Dido and Aeneas, Purcell</p>
+        <p>December 2025 - Ecce Novum, a musical reflection on the nativity, various works.</p>
+        <p>Spring 2025 - Mozart's Requiem KV 626, Finzi's Eclogue for piano and strings and Lo, the full final sacrifice, Parry's Blest pair of Sirens</p>
+        <p>December 2024 - Handel's Messiah, Vivaldi's Gloria, Vaughan Williams Fantasia on Christmas carols</p>
+        <p>Spring 2023 - Karl Jenkins' The Armed Man and Rutter's Requiem</p>
+        <p>Autumn 2022 - Magnificat in D Major - J.S Bach and Mass in G Major - Franz Schubert</p>
+        <p>Spring 2022 - Dvorak's Mass in D Minor, Vaughan Williams' Five Mystical Songs and Arensen's Eja Mater</p>
+        <p>Autumn 2019 - Britten - St Nicolas, Chilcott - Time of Snow Mid Winter, Whitacre - Lux Aurumque, Rutter - Nativity, Candlelight &amp; Shepherds Pipe Carols.</p>
+        <p>Spring 2019 - Vivaldi GLORIA &amp; Tippett 'Five Spirituals</p>
+        <p>Autumn 2018 - G.F. Handel - Messiah Part 1</p>
+        <p>Spring 2018 - Gioacchino Rossini's - Petite Messe Solennelle</p>
+        <p>Autumn 2017 - Benjamin Britten's - A Ceremony of Carols</p>
+        <p>Spring 2017 - Handel's Israel in Egypt - A joint concert with Uppingham Choral Society and the Bardi Orchestra</p>
+        <p>Spring 2016 - Creation by F. J. Haydn</p>
+        <p>Spring 2015 - Mass in C Minor K.427 by Mozart</p>
+        <p>Spring 2014 - Now is the Month of Maying - A Concert for May Day!</p>
+        <p>Autumn 2013 - The Nelson Mass by F. J. Haydn</p>
+        <p>Spring 2013 - Messe Solennelle by Louis Vierne (Oundle School Chapel)</p>
+        <p>Autumn 2012 - Messiah by G F Handel</p>
+        <p>Spring 2012 - The Music Makers by Edward Elgar (Peterborough Cathedral with Oundle School)</p>
+        <p>Autumn 2011 - Messa di Gloria by Giacomo Puccini</p>
+        <p>Spring 2011 - Requiem by W. A. Mozart</p>
+      </div>
     </div>
+  </section>
+
+  <section id="contact" class="section section-white contact-section text-center">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Tessa Leuchars - Chair (tleuchars@btinternet.com)</p>
+      <p>Clare Jones - Secretary (info@oundlechoralsociety.org.uk) or Phone 07709270494</p>
+      <p>Tessa Leuchars - Website (tleuchars@btinternet.com)</p>
+      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#privacyPolicy">Privacy Policy</button>
+    </div>
+  </section>
+</main>
+
+<div id="elizabethBio" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Elizabeth Arkell</h4>
+      </div>
+      <div class="modal-body">
+        <p>Elizabeth was a music scholar at Ardingly College and organ scholar at Sidney Sussex College, Cambridge, where she read for a degree in music. A Fellow of the Royal College of Organists, Elizabeth is an experienced organist and accompanist, having worked with many choirs and choral societies. Her career in music education has seen her teach in schools in Berkshire, Hampshire and Staffordshire, and she is currently Head of Academic Music and School Organist at Oundle School.</p>
+        <p>Elizabeth is a senior examiner for Pearson GCSE Music and has also worked as an examiner for the ABRSM. She was Organist and Director of Music at St John's Church in Peterborough from 2014 to 2022 and has accompanied ODCS since 2017.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Navbar -->
- <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <img class="navimg" src="NavBarImage.png" alt="Logo">
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="navbar-text"> <a href="#About Us">About Us</a></li>
-        <li class="navbar-text"> <a href="#Concerts & Events">Concerts & Events</a></li>
-        <li class="navbar-text"> <a href="#Members">Members</a></li>
-        <li class="navbar-text"> <a href="#Music">Music</a></li>
-        <li class="navbar-text"> <a href="#Contact Us">Contact Us</a></li>
-      </ul>
+<div id="andrewBio" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Andrew Kennedy</h4>
+      </div>
+      <div class="modal-body">
+        <p>Andrew Kennedy studied at King's College, Cambridge and the Royal College of Music. He was a member of the Young Artists Programme at Covent Garden and a BBC Radio 3 New Generation Artist. He won the Rosenblatt Recital Prize in the 2005 Cardiff Singer of the World Competition and was awarded a Borletti Trust Award and the prestigious Royal Philharmonic Society Young Artists Award in 2006.</p>
+        <p>Highlights in his operatic career have included Tom Rakewell The Rake's Progress; Tamino The Magic Flute; Vere Billy Budd and Peter Quint The Turn of the Screw. In concert Andrew has appeared with major orchestras including the LSO, LPO, Philharmonia, RLPO and all major BBC Orchestras.</p>
+        <p>A former Head of Singing at Westminster School and Director of Music at Uppingham School, Andrew is currently Head of Singing at Oundle School and Musician in Residence at Girton College, Cambridge and has been MD of ODCS since September 2025.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
-</nav>
-
-<!-- Container (Change) -->
-<div class="container text-center">
-  <marquee>
-  <h3 class="MovingTitle">We are now on our summer break. The new term will start on Monday 7th September</h3>
-  </marquee>
-  <h3 class="WelcomeTitle">Welcome to the Oundle & District Choral Society</h3>
-  <p1>
-    <div class="intro"> 
-    We are a mixed voice choir who have been in existence for over 100 years. We draw our membership from a fairly wide rural area and currently have approximately seventy voices who meet for rehearsals <p1 style="font-weight: bold;"> every Monday during term time.</p1>                
-    </div>
-  </p1>
-
-  <p2>
-    <div class="intro1"> 
-      Although we are an independent choral society, we have close links with Oundle School with whom we often perform and who regularly support our concerts. <p2 style="font-weight: bold;">Our rehearsals are held in Laxton Junior School Hall, East Road, Oundle, PE8 4BX, from 7.30pm until 9.30pm.</p2>
-    </div>
-  </p2>   
-
-  <p3>
-    <div class="intro2">
-      There is no requirement to audition and all singers are made welcome no matter what skill level you have. We are grateful to Oundle Town Council for their continuing financial support but, much like most societies, we are a registered charity and are obliged to charge a subscription fee. However, don’t let that stop you from coming along to see if you like us!
-    </div>
-  </p3>
-
-  <p4>
-    <div class="intro2">
-      If you are interested in joining our society please contact us for more information by telephoning/emailing using the details below.
-    </div>
-  </p4>
-
-  <p5>
-    <div class="intro2">
-      Registered charity number: 1098947
-    </div>
-  </p5>
 </div>
 
-<div class="rBox">
-  <h1>Forthcoming Concert</h1>
-  <h2>We will be rehearsing for a French choral Christmas concert which will include</h2>
-  <h2>Messe de minuit pour Noël by Marc-Antoine Charpentier and</h2>
-  <h2>Oratorio de Noël by Saint-Saëns.</h2>
-</div>
-
-<div class="wBox">
-    <h1>Recent Photos and Videos</h1>
-    <div class="container-fluid bg-3 text-center">
-        <div class="row">
-            <div class="col-sm-3">
-                <iframe
-                    src="https://www.youtube.com/embed/pvctYlR6xqw"
-                    allowfullscreen>
-                </iframe>
-
-                <img src="Rphoto1.png" class="img-fluid">
-            </div>
-
-            <div class="col-sm-3">
-                <iframe
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                    allowfullscreen>
-                </iframe>
-
-                <img src="Rphoto2.png" class="img-fluid">
-            </div>
-
-            <div class="col-sm-3">
-                <iframe
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                    allowfullscreen>
-                </iframe>
-
-                <img src="Rphoto3.png" class="img-fluid">
-            </div>
-
-            <div class="col-sm-3">
-                <iframe
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                    allowfullscreen>
-                </iframe>
-
-                <img src="Rphoto4.png" class="img-fluid">
-            </div>
-        </div>
+<div id="privacyPolicy" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Privacy Policy</h4>
+      </div>
+      <div class="modal-body">
+        <p>At Oundle &amp; District Choral Society, we always respect your personal privacy. We collect some information from visitors, but it is our policy to keep personal information private and secure.</p>
+        <p>Oundle &amp; District Choral Society will not release information without consent unless required by law, will not knowingly use information from children younger than 16 without parental consent, and will inform visitors when the privacy policy changes.</p>
+        <p>Information collected from website visits may include basic technical details such as IP address, operating system, browser software and internet service provider. This information is used in aggregate to understand website traffic.</p>
+        <p>Any personal information submitted through contact forms is kept for our records only. It is never passed on to third parties, added to mailing lists or used to send unsolicited correspondence.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="rBox1">
-    <h1>Previous Concerts and events</h1>
-
-    <div class="container-fluid bg-3 text-center">
-        <div class="row">
-
-            <div class="col-sm-3">
-                <img src="Photo1.png" class="img-fluid">
-            </div>
-
-            <div class="col-sm-3">
-                <img src="Photo2.png" class="img-fluid">
-            </div>
-
-            <div class="col-sm-3">
-                <img src="Photo3.png" class="img-fluid">
-            </div>
-
-            <div class="col-sm-3">
-                <img src="Photo4.png" class="img-fluid">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- WHITE -->
-<div class="wBox1">
-  <div class="container-fluid bg-3 text-center">
-        <div class="row">
-             <div class="col-sm-3">
-                <p>Accompanist Elizabeth Arkell</p>
-            </div>
-</div>
+</body>
+</html>

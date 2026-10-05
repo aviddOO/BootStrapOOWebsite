@@ -1,18 +1,29 @@
-#myCarousel .carousel-inner,
-#myCarousel .item {
-  width: 100%;
+html {
+  scroll-behavior: smooth;
 }
 
-#myCarousel .item img {
-  width: 100%;
-  height: 885px;
-  object-fit: cover;
-  display: block;
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  padding-top: 90px;
 }
 
 .navbar {
   background-color: #a51f2f;
+  border: 0;
+  border-radius: 0;
+  min-height: 90px;
+  margin-bottom: 0;
+}
+
+.navbar .container-fluid {
+  max-width: 1180px;
+}
+
+.navbar-brand {
   height: 90px;
+  padding: 12px 15px;
 }
 
 .navimg {
@@ -20,158 +31,306 @@
   width: auto;
 }
 
-.navbar-text {
-  display: flex;
-  align-items: center;
+.navbar-default .navbar-toggle {
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: 28px;
 }
 
-.navbar-nav > li > a {
-  color: rgba(255, 255, 255, 0.774) !important;
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: rgba(255, 255, 255, 0.9);
   font-size: 15px;
-  padding-left: 1px;
-  padding-right: 1px;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-weight: 600;
+  line-height: 60px;
+  padding: 15px 10px;
 }
 
-.navbar-text a,
-.navbar-text a:hover,
-.navbar-text a:focus {
-  color: white !important;
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #fff;
 }
 
-.MovingTitle {
-  color: #a51f2f;
+#myCarousel {
+  background-color: #111;
+}
+
+#myCarousel .carousel-inner,
+#myCarousel .item {
+  width: 100%;
+}
+
+#myCarousel .item img {
+  display: block;
+  height: calc(100vh - 90px);
+  min-height: 560px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.section {
+  padding: 70px 0;
+  scroll-margin-top: 90px;
+}
+
+.section-white {
+  background-color: #fff;
+}
+
+.section-red {
+  background-color: #a51f2f;
+  color: #fff;
+}
+
+.section h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 34px;
+}
+
+.section h2 {
   font-size: 30px;
-  font-weight: 550;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 8px 0;
 }
 
-.WelcomeTitle {
+.intro-section {
+  padding-top: 38px;
+}
+
+.moving-title {
   color: #a51f2f;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 22px;
 }
 
-.intro {
-  padding-top: 5px;
-  padding-bottom: 10px;
-  text-align:justify !important;
+.intro-section h1,
+.media-section h1,
+.contact-section h1,
+.quotes-section h2 {
+  color: #a51f2f;
+}
+
+.intro-section p {
   font-size: 16px;
+  margin: 0 auto 18px;
+  max-width: 940px;
+  text-align: justify;
 }
 
-.intro1 {
-  padding-top: 30px;
-  padding-bottom: 15px;
-  text-align:justify !important;
-  font-size: 16px;
+.concert-section {
+  min-height: 360px;
+  padding-top: 82px;
 }
 
-
-.intro2 {
-  padding-top: 5px;
-  padding-bottom: 10px;
-  text-align:justify !important;
-  font-size: 16px;
+.media-section .container-fluid,
+.gallery-section .container-fluid {
+  max-width: 1200px;
 }
 
-.rBox {
-  background-color:#a51f2f;
-  height: 400px;
-  border-style: solid;
-  border: 10px;
+.media-item iframe {
+  border: 0;
+  display: block;
+  height: 125px;
+  margin: 0 auto;
+  width: 220px;
 }
 
-.rBox1 {
-  background-color:#a51f2f;
-  height: 500px;
-  border-style: solid;
-  border: 10px;
+.media-item img {
+  display: block;
+  height: 130px;
+  margin: 38px auto 0;
+  object-fit: cover;
+  width: 185px;
 }
 
-.rBox1 h1 {
-  color: white;
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 60px;
+.gallery-section {
+  min-height: 500px;
 }
 
-
-.rBox1 .img-fluid {
-    width: 185px;
-    height: 250px;
-    object-fit: cover;
-
-    display: block;
-    margin: 40px auto 0 auto;
-
-    padding: 0;
+.gallery-section img {
+  display: block;
+  height: 250px;
+  margin: 20px auto 0;
+  object-fit: cover;
+  width: 185px;
 }
 
-.rBox h1 {
-  color: white;
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 60px;
+.people-section {
+  padding: 56px 0;
 }
 
-.rBox h2{
-  color: white;
+.profile-card {
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+.profile-card h4 {
+  color: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.profile-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+.profile-card img {
+  display: block;
+  height: 190px;
+  margin: 0 auto 22px;
+  object-fit: cover;
+  width: 190px;
+}
+
+.btn-danger {
+  background-color: #a51f2f;
+  border-color: #8c1725;
+}
+
+.btn-light {
+  background-color: #fff;
+  border-color: #fff;
+  color: #a51f2f;
+  font-weight: 700;
+}
+
+.members-section h1,
+.music-section h1 {
+  color: #fff;
+}
+
+.committee {
+  font-size: 18px;
+  margin: 0 auto 44px;
+  max-width: 620px;
+}
+
+.committee p {
+  margin-bottom: 12px;
+}
+
+.quotes-section h2 {
   font-size: 32px;
-  font-weight: 600;
-  text-align: center;
-  padding-top: 0px;
+  font-weight: 700;
+  margin: 0 0 35px;
 }
 
-.wBox {
-    background-color: #fff;
-    padding-top: 75px;
-    padding-bottom: 90px;
+.quote-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.wBox h1 {
-    color: #a51f2f;
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-    margin: 0 0 40px 0;
+.quote-grid blockquote {
+  border-left: 5px solid #a51f2f;
+  font-size: 16px;
+  margin: 0;
 }
 
-/* Make the row match the narrower layout in your example */
-.wBox .container-fluid {
-    max-width: 1200px;
-    margin: 0 auto;
+.quote-grid footer {
+  color: #a51f2f;
+  font-weight: 700;
 }
 
-/* Each video/photo column */
-.wBox .col-sm-3 {
-    text-align: center;
+.music-list {
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
-/* Videos */
-.wBox iframe {
-    width: 220px;
-    height: 125px;
+.music-list p {
+  margin-bottom: 13px;
+}
+
+.contact-section {
+  padding-bottom: 86px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.modal-title {
+  color: #a51f2f;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .navbar {
+    min-height: 70px;
+  }
+
+  .navbar-brand {
+    height: 70px;
+    padding: 10px 15px;
+  }
+
+  .navimg {
+    height: 50px;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    line-height: 24px;
+    padding: 10px 18px;
+  }
+
+  .navbar-collapse {
+    background-color: #a51f2f;
     border: 0;
-    display: block;
-    margin: 0 auto;
-}
+  }
 
-/* Photos underneath */
-.wBox .img-fluid {
-    width: 185px;
-    height: 130px;
-    object-fit: cover;
+  .navbar-default .navbar-toggle {
+    margin-top: 18px;
+  }
 
-    display: block;
-    margin: 40px auto 0 auto;
+  #myCarousel .item img {
+    height: 62vh;
+    min-height: 360px;
+  }
 
-    padding: 0;
-}
+  .section {
+    padding: 48px 0;
+    scroll-margin-top: 70px;
+  }
 
+  .section h1 {
+    font-size: 30px;
+  }
 
-.wBox1 {
-    background-color: white;
-    height: 375px;
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .moving-title {
+    font-size: 22px;
+  }
+
+  .intro-section p {
+    text-align: left;
+  }
+
+  .media-item,
+  .gallery-section .col-sm-3 {
+    margin-bottom: 34px;
+  }
+
+  .quote-grid {
+    grid-template-columns: 1fr;
+  }
 }
