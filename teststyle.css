@@ -69,14 +69,109 @@
 
 .intro2 {
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   text-align:justify !important;
   font-size: 16px;
 }
 
 .rBox {
   background-color:#a51f2f;
-  height: 200px;
+  height: 400px;
   border-style: solid;
   border: 10px;
+}
+
+.rBox1 {
+  background-color:#a51f2f;
+  height: 500px;
+  border-style: solid;
+  border: 10px;
+}
+
+.rBox1 h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 60px;
+}
+
+
+.rBox1 .img-fluid {
+    width: 185px;
+    height: 250px;
+    object-fit: cover;
+
+    display: block;
+    margin: 40px auto 0 auto;
+
+    padding: 0;
+}
+
+.rBox h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.rBox h2{
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.wBox {
+    background-color: #fff;
+    padding-top: 75px;
+    padding-bottom: 90px;
+}
+
+.wBox h1 {
+    color: #a51f2f;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+/* Make the row match the narrower layout in your example */
+.wBox .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Each video/photo column */
+.wBox .col-sm-3 {
+    text-align: center;
+}
+
+/* Videos */
+.wBox iframe {
+    width: 220px;
+    height: 125px;
+    border: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Photos underneath */
+.wBox .img-fluid {
+    width: 185px;
+    height: 130px;
+    object-fit: cover;
+
+    display: block;
+    margin: 40px auto 0 auto;
+
+    padding: 0;
+}
+
+
+.wBox1 {
+    background-color: white;
+    height: 375px;
 }
